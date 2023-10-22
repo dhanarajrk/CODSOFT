@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Task2-Landing Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linked css externally -->
+  <link rel="stylesheet" href="landingstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body>
+  <section>
+    <div class="container">
+      <nav>
+        <h1>DTS</h1>
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Project</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="article">
+        <h1>DAILY TASK SCHEDULER</h1>
+        <p>
+         Daily Task Scheduler (DTS) can help you plan, schedule, and remember all tasks and deadlines,
+         and turn your to-dos into done, and, more importantly—get it all done more easily.<br>
+         Click the link below to download now for free. 
+        </p>
+        <a href="" class="download">Download Now</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+        <div class="footerContainer reveal">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Our Team</a></li>
+          </ul>
+        </div>
+       </div>
+       <div class="footerBottom reveal">
+          <p>Copyright &copy;2023; Desgined by <span class="designer">Dhanaraj Rk.</span></p>
+        </div>
+      </footer>
+
+    <!-- I put footer animation js internally -->
+    <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 0;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+</body>
+</html>
