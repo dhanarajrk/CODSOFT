@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Task1-Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- I linked css externally -->
+  <link rel="stylesheet" href="portfoliostyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<div class="whole">
+<body>
+  <nav>
+    <div id="logo" class="logo">
+      <img src="logo.png" alt="DHANARAJ LOGO" width="60" height="60">
+    </div>
+    <ul class="nav-list">
+      <li><a href="#logo">Home</a></li>
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+ <div class="container">
+   <section id="header">
+     <div class="header-content">
+       <h2>Hello I'm</h2>
+       <h1>Dhanaraj Rk.</h1>
+       <p>
+         Crafting seamless user experiences with modern and responsive 
+         applications. Passionate about clean code and intuitive design.
+       </p>
+       <div class="button-wrapper">
+         <button class="primary-btn btn">
+           About Me
+         </button>
+         <button class="secondary-btn btn" onclick="window.open('resume.pdf', '_blank')">
+           Resume
+         </button>
+
+       </div>
+     </div>
+     <div class="header-img">
+       <img src="dp.png" alt="DP" width="290" height="350">
+     </div>
+   </section>
+
+   <section id="about-me">
+     <h1 class="title">About Me: </h1>
+     <p>
+       Hello! I'm Dhanaraj Rk, a dedicated frontend designer with a keen eye for detal and a relentless passion for creating engaging and efficient user interfaces. I've had the privilege of working with diverse teams and project, each refining my expertise in delivering solutions that not only look good but also perform optimally.
+     </p>
+     <div class="experience">
+      <h1 class="experience-title">6+</h1>
+      <p class="description">Months of experience as a frontend developer, I transform designs into responsive, user-friendly experiences. Let's bring your digital version to life!</p>
+     </div>
+     <div class="skills">
+       <div class="skill skill-1">
+         <img src="troubleshoot.svg">
+         <h1>TROUBLESHOOT</h1>
+       </div>
+       <div class="skill skill-2">
+         <img src="web.svg">
+         <h1>WEB DEVELOPMENT</h1>
+       </div>
+       <div class="skill skill-3">
+         <img src="python.svg">
+         <h1>PYTHON</h1>
+       </div>
+       <div class="skill skill-4">
+         <img src="dbms.svg">
+         <h1>DBMS</h1>
+       </div>
+       </div>
+   </section>
+   <section id="projects">
+     <h1 class="title">Featured projects:</h1>
+     <p class="description">
+       Explore a curated collection of our proudest accomplishments - a testament to our innovation, dedication, and the value we bring to every project.
+     </p>
+     <div class="projects-container">
+       <div class="project">
+        <img src="OnlineStudentManagement.jpg" alt="project_1">
+        <h2 class="title">Online Student Admission</h2>
+        <p>
+         Storing data, as we know, is imperative for the core functioning of any
+         academic institution. More importantly, is having the provision to store it
+         securely and retrieving it seamlessly.
+         Keeping this in mind, we have developed an Online Student Admission
+         Database Management System, which aims to ease the process of maintaining
+         the record of students in a University. 
+        </p>
+        <div class="button-wrapper">
+          <a target="_blank" href="https://github.com/dhanarajrk/Online-Student-Admission"><button class="secondary-btn btn">Github</button></a>
+        </div>  
+      </div>
+       <div class="project">
+        <img src="ColourDetection.jpg" alt="project_2">
+        <h2 class="title">Colour detection</h2>
+        <p>
+         For a robot to visualize the environment, along with the object detection, detection of its color in real-time is also very important. Some Real-world Applications
+         In self-driving car, to detect the traffic signals.
+         Multiple color detection is used in some industrial robots, to performing pick-and-place task in separating different colored objects. This is an implementation of detecting multiple colors in real-time using Python programming language.
+        </p>
+        <div class="button-wrapper">
+          <a target="_blank" href="https://github.com/dhanarajrk/Color-Detection"><button class="secondary-btn btn">Github</button></a>
+        </div>  
+      </div>
+      <div class="project">
+        <img src="AdultEducation.jpg" alt="project_3">
+        <h2 class="title">Education for adults</h2>
+        <p>
+         The main aim for creating an Elderly Education website is to offer flexible, accessible
+         , and personalized learning opportunities to promote personal and professional development.
+         And to provide the platform for adults to learn , acquire new skills, promote lifelong learning. 
+        </p>
+        <div class="button-wrapper">
+          <a target="_blank" href="https://github.com/dhanarajrk/PAIDEIA"><button class="secondary-btn btn">Github</button></a>
+        </div>  
+      </div>
+    </div>
+  </section>
+  <footer>
+  <section id="contact">
+    <h1 class="title">Get in Touch:</h1>
+    <div class="contact-container">
+      <div class="social-links">
+        <p>Have a question? Feel free to contact me</p><br>
+        <p>mleonel51.lm@gmail.com</p><br>
+        <p>+91 987654321</p>
+        <div class="icons-wrapper">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+      <div class="form-wrapper">
+        <h2>Let's discuss how we can turn your vision into reality</h2>
+        <input type="text" placeholder="Name:">
+        <input type="text" placeholder="Email:">
+        <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+        <div class="primary-btn btn">Send</div>
+      </div>
+    </div>
+     <div class="footerNav">
+          <ul>
+            <li><a href="#logo">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+       </div>
+       <div class="footerBottom">
+          <p>Copyright &copy;2023; Desgined by <span class="designer">Dhanaraj Rk.</span></p>
+        </div>
+  </section>
+ </footer>
+ </div>
+</body>
+</html>
